@@ -1,0 +1,19 @@
+name: Audit
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  Audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Homebrew/actions/setup-homebrew@master
+      - name: Tap this repository
+        run: |
+          mkdir -p $(brew --repository)/Library/Taps/clouatre-labs
+          ln -s $GITHUB_WORKSPACE $(brew --repository)/Library/Taps/clouatre-labs/homebrew-tap
+      - name: Audit formulae
+        run: brew audit --strict --online --tap clouatre-labs/tap
