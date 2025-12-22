@@ -1,7 +1,7 @@
 class Aptu < Formula
   desc "Gamified OSS issue triage with AI assistance"
   homepage "https://github.com/clouatre-labs/aptu"
-  version "v0.1.2"
+  version "0.1.2"
   license "Apache-2.0"
   
   if OS.mac? && Hardware::CPU.arm?
