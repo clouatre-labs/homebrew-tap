@@ -1,18 +1,17 @@
 class Aptu < Formula
   desc "Gamified OSS issue triage with AI assistance"
   homepage "https://github.com/clouatre-labs/aptu"
-  version "0.2.2"
   license "Apache-2.0"
   
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/clouatre-labs/aptu/releases/download/v0.2.2/aptu-aarch64-apple-darwin.tar.gz"
-    sha256 "ec26df8bf1eda796f30852443dae1d9a98c28c1f15e589fa40daa4ff7646014d"
+    url "https://github.com/clouatre-labs/aptu/releases/download/v0.2.3/aptu-0.2.3-aarch64-apple-darwin.tar.gz"
+    sha256 "bd7f8dc0606fa1090fb0f8edf3d2b74691ba00fdca80cdccdaf5249255fc2b04"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/clouatre-labs/aptu/releases/download/v0.2.2/aptu-aarch64-unknown-linux-musl.tar.gz"
-    sha256 "9905771918e5cc106022e93ee7e7d65917e97ba6e60d07eef27dfedac89c3a58"
+    url "https://github.com/clouatre-labs/aptu/releases/download/v0.2.3/aptu-0.2.3-aarch64-unknown-linux-musl.tar.gz"
+    sha256 "24e8d913aa20350373fcfb8df93fd25143e07ee1fcfde493141748401ec2cd2a"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/clouatre-labs/aptu/releases/download/v0.2.2/aptu-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "c517c1b34a782298794b7bad6047518a40628cc1d8dd41f801c7c88737827fff"
+    url "https://github.com/clouatre-labs/aptu/releases/download/v0.2.3/aptu-0.2.3-x86_64-unknown-linux-musl.tar.gz"
+    sha256 "16c9f01e1f5ff1c1396b4ed28e85bd98013e9789ce179c2a3d7b2d681f1a66eb"
   end
   
   def install
