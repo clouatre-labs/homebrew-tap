@@ -19,6 +19,7 @@ jobs:
         with:
           advanced-security: false
           annotations: true
+          min-severity: error
 
   Audit:
     runs-on: ubuntu-24.04
