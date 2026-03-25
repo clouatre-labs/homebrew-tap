@@ -7,10 +7,10 @@ on:
 
 jobs:
   Audit:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
-      - uses: Homebrew/actions/setup-homebrew@master
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: Homebrew/actions/setup-homebrew@8f52032f943acddc1c5670f437b94e031e78afc0 # main@2026-03-25
       - name: Tap this repository
         run: |
           mkdir -p $(brew --repository)/Library/Taps/clouatre-labs
