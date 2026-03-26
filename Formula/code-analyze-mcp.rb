@@ -4,14 +4,14 @@ class CodeAnalyzeMcp < Formula
   license "Apache-2.0"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/clouatre-labs/code-analyze-mcp/releases/download/v0.1.9/code-analyze-mcp-0.1.9-aarch64-apple-darwin.tar.gz"
-    sha256 "93f144559bf3f37749f3741d87c7585978f766d1259e190c93c71f722cb07e7e"
+    url "https://github.com/clouatre-labs/code-analyze-mcp/releases/download/v0.1.10/code-analyze-mcp-0.1.10-aarch64-apple-darwin.tar.gz"
+    sha256 "5ba9fda46b49fa913f26be2fc5582898df700d18278cb2e33b432e43c451f007"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/clouatre-labs/code-analyze-mcp/releases/download/v0.1.9/code-analyze-mcp-0.1.9-aarch64-unknown-linux-musl.tar.gz"
-    sha256 "eb31a5f63cb676bc1d3b95dd316e49213f2319794b386f912befe1a7556348f0"
+    url "https://github.com/clouatre-labs/code-analyze-mcp/releases/download/v0.1.10/code-analyze-mcp-0.1.10-aarch64-unknown-linux-musl.tar.gz"
+    sha256 "94a22da6f89d8ac6e0d6767774154b20c895c10facbb28f43042363cb50aa4af"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/clouatre-labs/code-analyze-mcp/releases/download/v0.1.9/code-analyze-mcp-0.1.9-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "95f1deb444760538fdcd5d60a83b3773f61a57b164ace671dc91f331372a9d9b"
+    url "https://github.com/clouatre-labs/code-analyze-mcp/releases/download/v0.1.10/code-analyze-mcp-0.1.10-x86_64-unknown-linux-musl.tar.gz"
+    sha256 "d9b670b7948560ea97c2cd4b5e1e1cf54ac8c1a3d2a465f5e3008891a79b7572"
   end
 
   def install
