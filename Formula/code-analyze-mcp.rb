@@ -5,13 +5,13 @@ class CodeAnalyzeMcp < Formula
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/clouatre-labs/code-analyze-mcp/releases/download/v0.1.10/code-analyze-mcp-0.1.10-aarch64-apple-darwin.tar.gz"
-    sha256 "5ba9fda46b49fa913f26be2fc5582898df700d18278cb2e33b432e43c451f007"
+    sha256 "53afa401c293938e5232452d151ab5d02a9e190163e84b7e3c10ff070f8ad83f"
   elsif OS.linux? && Hardware::CPU.arm?
     url "https://github.com/clouatre-labs/code-analyze-mcp/releases/download/v0.1.10/code-analyze-mcp-0.1.10-aarch64-unknown-linux-musl.tar.gz"
-    sha256 "94a22da6f89d8ac6e0d6767774154b20c895c10facbb28f43042363cb50aa4af"
+    sha256 "a243ddf92677ce82349e83003966d8b656c574cd96ec3869822cd72df462b5b6"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/clouatre-labs/code-analyze-mcp/releases/download/v0.1.10/code-analyze-mcp-0.1.10-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "d9b670b7948560ea97c2cd4b5e1e1cf54ac8c1a3d2a465f5e3008891a79b7572"
+    sha256 "602ede6833aaac286800dd6c7d92e5b5d91fdf30e0851982ed37a0c65d0ba225"
   end
 
   def install
