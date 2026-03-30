@@ -4,14 +4,14 @@ class AptuMcp < Formula
   license "Apache-2.0"
   
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/clouatre-labs/aptu/releases/download/v0.2.20/aptu-mcp-0.2.20-aarch64-apple-darwin.tar.gz"
-    sha256 "59096a3c773614eac62156f64c304dc2c48cf98357d8e61cedecb8fffcd8abf4"
+    url "https://github.com/clouatre-labs/aptu/releases/download/v0.2.21/aptu-mcp-0.2.21-aarch64-apple-darwin.tar.gz"
+    sha256 "6e3dbdb6e914602e16054acb54cec3b4b268fb5ac132f69c2385c4a1b4915ae6"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/clouatre-labs/aptu/releases/download/v0.2.20/aptu-mcp-0.2.20-aarch64-unknown-linux-musl.tar.gz"
-    sha256 "d4c52132051439c1c27a13fbe0753a37ebdb6941bf7b4172c37f7add56226a10"
+    url "https://github.com/clouatre-labs/aptu/releases/download/v0.2.21/aptu-mcp-0.2.21-aarch64-unknown-linux-musl.tar.gz"
+    sha256 "e8a147e12b6e425daa53845e07da9d7dd18a99585076ea6cedfb2ac6b2121ede"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/clouatre-labs/aptu/releases/download/v0.2.20/aptu-mcp-0.2.20-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "5eae9e62aff41640a6192351b2d8ab56e70b1666eee1bfd36b3faca0bd8e49a4"
+    url "https://github.com/clouatre-labs/aptu/releases/download/v0.2.21/aptu-mcp-0.2.21-x86_64-unknown-linux-musl.tar.gz"
+    sha256 "0e4b468ccd6fd658df891ec80075660d5350240392f0b04e81045f7748e317f3"
   end
   
   def install

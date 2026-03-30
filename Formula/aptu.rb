@@ -4,14 +4,14 @@ class Aptu < Formula
   license "Apache-2.0"
   
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/clouatre-labs/aptu/releases/download/v0.2.20/aptu-cli-0.2.20-aarch64-apple-darwin.tar.gz"
-    sha256 "bea5ec1eed38b060aa6f9da2a056653fd052d18f5e9e3e1a9c8c0bc12adaece4"
+    url "https://github.com/clouatre-labs/aptu/releases/download/v0.2.21/aptu-cli-0.2.21-aarch64-apple-darwin.tar.gz"
+    sha256 "0cd8b1a45b71e152ee324f210795297bf9df3926d9227aaf59e5a29816941c56"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/clouatre-labs/aptu/releases/download/v0.2.20/aptu-cli-0.2.20-aarch64-unknown-linux-musl.tar.gz"
-    sha256 "af512efdae7531c728cd95438a36ec6e34db4db490a11370952ad4c591b1b798"
+    url "https://github.com/clouatre-labs/aptu/releases/download/v0.2.21/aptu-cli-0.2.21-aarch64-unknown-linux-musl.tar.gz"
+    sha256 "83ead8b913c397f1365fd6c3309baa0b6cd3ea0bff9f1b98010db79531c4b817"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/clouatre-labs/aptu/releases/download/v0.2.20/aptu-cli-0.2.20-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "bf79721b990a97775320d740e005f21b89c19eaec902a5793637a829d38c7700"
+    url "https://github.com/clouatre-labs/aptu/releases/download/v0.2.21/aptu-cli-0.2.21-x86_64-unknown-linux-musl.tar.gz"
+    sha256 "908411310c437682071c7c6575e661a82904180553a6200da5493db5f0b055ab"
   end
   
   def install
