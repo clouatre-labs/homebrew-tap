@@ -4,14 +4,14 @@ class AptuMcp < Formula
   license "Apache-2.0"
   
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/clouatre-labs/aptu/releases/download/v0.3.1/aptu-mcp-0.3.1-aarch64-apple-darwin.tar.gz"
-    sha256 "2e2859073c4e5d96868eddec49c3e5725a883aee144670d56da679af509a3939"
+    url "https://github.com/clouatre-labs/aptu/releases/download/v0.3.2/aptu-mcp-0.3.2-aarch64-apple-darwin.tar.gz"
+    sha256 "b165b1370cc797da39d3a02a80cb5441dd5f0f931e8f4d2dc6226e474b1e7390"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/clouatre-labs/aptu/releases/download/v0.3.1/aptu-mcp-0.3.1-aarch64-unknown-linux-musl.tar.gz"
-    sha256 "269053d8e8a1feee2087c2ddf20d6e228889dadf9607180faa80480b8b554c9f"
+    url "https://github.com/clouatre-labs/aptu/releases/download/v0.3.2/aptu-mcp-0.3.2-aarch64-unknown-linux-musl.tar.gz"
+    sha256 "979d152b3338866d69eea719bf6dfd307f597163d898141e11a6acb70e6dafca"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/clouatre-labs/aptu/releases/download/v0.3.1/aptu-mcp-0.3.1-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "0abf4dabe182b866ad79fec637c120c5dc32e2c21ee998e92d1db47e6926429a"
+    url "https://github.com/clouatre-labs/aptu/releases/download/v0.3.2/aptu-mcp-0.3.2-x86_64-unknown-linux-musl.tar.gz"
+    sha256 "63516aba2c0a40865388807e47ab0f361f7d4cfabc9ebb39f4aee4831ce09d99"
   end
   
   def install
