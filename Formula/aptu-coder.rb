@@ -18,6 +18,14 @@ class AptuCoder < Formula
     bin.install "aptu-coder"
   end
 
+  service do
+    run [opt_bin/"aptu-coder", "--port", "49200"]
+    keep_alive true
+    log_path var/"log/aptu-coder.log"
+    error_log_path var/"log/aptu-coder.log"
+    environment_variables PATH: std_service_path_env
+  end
+
   test do
     assert_match version.to_s, shell_output("#{bin}/aptu-coder --version")
   end
