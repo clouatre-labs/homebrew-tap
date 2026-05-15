@@ -14,6 +14,13 @@ class AptuCoder < Formula
     sha256 "8c7c71550bfc7991dcd5584c46e2b23a33adb4575322f2e0adf2fe47fec1fe0d"
   end
 
+  service do
+    run [opt_bin/"aptu-coder", "--port", "49200"]
+    keep_alive true
+    log_path var/"log/aptu-coder.log"
+    error_log_path var/"log/aptu-coder.log"
+  end
+
   def install
     bin.install "aptu-coder"
   end
