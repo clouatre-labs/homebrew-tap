@@ -4,14 +4,14 @@ class AptuCoder < Formula
   license "Apache-2.0"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/clouatre-labs/aptu-coder/releases/download/v0.16.3/aptu-coder-0.16.3-aarch64-apple-darwin.tar.gz"
-    sha256 "475e1b167c2ad6cffeb868d9ed9ad8cc2cda9cf7ce07c88e096561de089be380"
+    url "https://github.com/clouatre-labs/aptu-coder/releases/download/v0.16.4/aptu-coder-0.16.4-aarch64-apple-darwin.tar.gz"
+    sha256 "2398fb8fc8b480b5fd19625a561b44d507a03719e0c1f70a5266865711521ba4"
   elsif OS.linux? && Hardware::CPU.arm?
-    url "https://github.com/clouatre-labs/aptu-coder/releases/download/v0.16.3/aptu-coder-0.16.3-aarch64-unknown-linux-musl.tar.gz"
-    sha256 "d20132543ade93711f0e83961271779480d7f47dd8d3d63a64f69176f49aba31"
+    url "https://github.com/clouatre-labs/aptu-coder/releases/download/v0.16.4/aptu-coder-0.16.4-aarch64-unknown-linux-musl.tar.gz"
+    sha256 "4887ad0377ef16623e4ebc00826e1497bb4ec9ae60f45154f9dccd117ef02c64"
   elsif OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/clouatre-labs/aptu-coder/releases/download/v0.16.3/aptu-coder-0.16.3-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "6a9e4f640598cc241153ed0eb3bf656896ba1c8478ea1bfe753b48c24b2fd193"
+    url "https://github.com/clouatre-labs/aptu-coder/releases/download/v0.16.4/aptu-coder-0.16.4-x86_64-unknown-linux-musl.tar.gz"
+    sha256 "ec7570fa485dda191d7b87515146ee47ff81d7499b2fdfbbe1fcab8f5dbe8dba"
   end
 
   service do
