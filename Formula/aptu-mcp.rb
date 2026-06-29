@@ -4,8 +4,8 @@ class AptuMcp < Formula
   license "Apache-2.0"
   
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/clouatre-labs/aptu/archive/refs/tags/v0.10.1.tar.gz"
-    sha256 "2a98917aa73c5ecafcfeee3ab06c0278d8d6f5bf0761b8486f26404f4fb4c203"
+    url "https://github.com/clouatre-labs/aptu/archive/refs/tags/v0.10.2.tar.gz"
+    sha256 "ad3dfd880cd79979f9d4189cdb61e0238a3e920283619a8ee14427df11366305"
   elsif OS.linux? && Hardware::CPU.arm?
     url "https://github.com/clouatre-labs/aptu/releases/download/v0.6.0/aptu-mcp-0.6.0-aarch64-unknown-linux-musl.tar.gz"
     sha256 "331420e001575f7023aadf467afa067ebfe781e9569a57cb630de4847f97bfdf"
