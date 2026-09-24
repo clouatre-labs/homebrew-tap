@@ -6,7 +6,7 @@
   do not raise the comment.
 - If you are unsure whether something is a bug or intentional, say so explicitly rather than
   asserting it is wrong.
-- Do not apply general knowledge about Rust, rmcp, or GitHub Actions if the diff does not
+- Do not apply general knowledge about Ruby, Homebrew, or GitHub Actions if the diff does not
   contain evidence of a violation. Patterns and invariants are documented in `AGENTS.md`; cite
   that file if you reference a rule.
 
@@ -14,12 +14,17 @@
 
 Review only what the PR changes. Do not flag issues in files the PR does not touch.
 
-## Rust crates
+## Homebrew formulas
 
-- Do not flag `.unwrap()` in test code; it is acceptable there.
-- Do not suggest adding dependencies without a justification visible in the diff.
-- Do not comment on style that `cargo fmt` or `cargo clippy` would catch automatically; those
-  are enforced by CI.
+- Verify every platform block (macOS ARM, Linux ARM, Linux x86_64) is updated together; a
+  version bump must not leave platforms at different versions.
+- Verify sha256 values look like plausible digests and match the referenced release URL; a
+  mismatched hash breaks `brew install` for every user. Never accept an invented hash.
+- Do not comment on style that `brew style` would catch automatically; it is enforced
+  locally and in CI.
+- Do not suggest structural changes to formulas (adding service blocks, caveats, extra
+  resources) without a justification visible in the diff; formulas here are intentionally
+  minimal (url/sha256, install, test).
 
 ## Workflow files
 
