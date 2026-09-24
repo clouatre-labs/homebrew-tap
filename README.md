@@ -27,7 +27,7 @@ brew tap clouatre-labs/tap
 ## Architecture
 
 ```mermaid
-flowchart LR
+flowchart TD
     R[GitHub Releases] -->|url + sha256 per platform| F[Formula/*.rb]
     F --> B[brew audit / brew style]
     B -->|pass| U[brew install / brew upgrade]
