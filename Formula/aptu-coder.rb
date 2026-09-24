@@ -21,6 +21,10 @@ class AptuCoder < Formula
     error_log_path var/"log/aptu-coder.log"
   end
 
+  def install
+    bin.install "aptu-coder"
+  end
+
   def caveats
     <<~EOS
       aptu-coder defaults to stdio mode: your MCP client (e.g. Claude, goose)
@@ -31,10 +35,6 @@ class AptuCoder < Formula
       a persistent HTTP service on port 49200:
         brew services start clouatre-labs/tap/aptu-coder
     EOS
-  end
-
-  def install
-    bin.install "aptu-coder"
   end
 
   test do
