@@ -28,29 +28,15 @@ brew tap clouatre-labs/tap
 
 ```mermaid
 flowchart LR
-    subgraph gh[GitHub Releases]
-        A[aptu artifacts]
-        C[aptu-coder artifacts]
-    end
-    subgraph tap[clouatre-labs/tap]
-        F1[Formula/aptu.rb]
-        F2[Formula/aptu-coder.rb]
-    end
-    subgraph homebrew[Homebrew]
-        B[brew audit / brew style]
-        U[brew install / brew upgrade]
-    end
-    A -->|url + sha256 per platform| F1
-    C -->|url + sha256 per platform| F2
-    F1 --> B
-    F2 --> B
-    B -->|pass| U
+    R[GitHub Releases] -->|url + sha256 per platform| F[Formula/*.rb]
+    F --> B[brew audit / brew style]
+    B -->|pass| U[brew install / brew upgrade]
     U --> User[(macOS / Linux user)]
 ```
 
-*Figure 1: Each formula pins a release tarball and SHA-256 per platform from the
-upstream GitHub release. Formulas are validated with `brew audit`/`brew style`
-and consumed via `brew install clouatre-labs/tap/<formula>`.*
+*Figure 1: Every formula pins a release tarball and SHA-256 per platform from
+its upstream GitHub release. Formulas are validated with `brew audit`/`brew
+style` and consumed via `brew install clouatre-labs/tap/<formula>`.*
 
 ## Usage
 
