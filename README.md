@@ -19,11 +19,6 @@ brew tap clouatre-labs/tap
 | [aptu](https://github.com/clouatre-labs/aptu) | Gamified OSS issue triage with AI assistance |
 | [aptu-coder](https://github.com/clouatre-labs/aptu-coder) | MCP server for code structure analysis using tree-sitter |
 
-> [!NOTE]
-> The `aptu-mcp` formula has been removed and is no longer maintained. Its
-> functionality lives on in the `aptu` CLI; use `brew install clouatre-labs/tap/aptu`
-> instead.
-
 ## Architecture
 
 ```mermaid
