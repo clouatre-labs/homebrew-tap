@@ -33,27 +33,6 @@ flowchart TD
 its upstream GitHub release. Formulas are validated with `brew audit`/`brew
 style` and consumed via `brew install clouatre-labs/tap/<formula>`.*
 
-## Usage
-
-Install a formula:
-
-```bash
-brew install clouatre-labs/tap/aptu
-```
-
-Or after tapping:
-
-```bash
-brew install aptu
-```
-
-## Updating
-
-```bash
-brew update
-brew upgrade aptu
-```
-
 ## Contributing
 
 1. Fork this repository
